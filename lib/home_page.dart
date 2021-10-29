@@ -1,8 +1,9 @@
 // TODO Implement this library.import 'package:flutter/material.dart';
+import 'package:eventos_pi/categorias.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_drawer.dart';
-import 'my_app.dart';
+import 'gerenciar_Eventos.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -44,10 +45,8 @@ class _MyHomePageState extends State<MyHomePage>
       body: TabBarView(
         controller: _controller,
         children: <Widget>[
-          MyApp(),
-          Center(
-            child: Text('desktop'),
-          ),
+          gerenciarEventos(),
+          Categorias(),
         ],
       ),
     );

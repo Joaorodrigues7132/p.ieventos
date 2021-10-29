@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
+import 'gerenciar_Eventos.dart';
 
-class MyApp extends StatelessWidget {
-  // get child => null;
+class Categorias extends StatefulWidget {
+  const Categorias({Key? key}) : super(key: key);
+
+  @override
+  _categoriadsState createState() => _categoriadsState();
+}
+
+class _categoriadsState extends State<Categorias> {
 
   @override
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
     var altura = MediaQuery.of(context).size.height;
 
-    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back));
+
+
+
+        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back));
     SizedBox(width: 50);
     child:
     ElevatedButton(
@@ -104,13 +114,14 @@ class MyApp extends StatelessWidget {
         );
       },
       child: const Text('Adicionar Eventos'),
-    );
+    );//MODAL
 
-    // SizedBox(width: 50),
-    // IconButton(
-    //     onPressed: () {}, icon: Icon(Icons.arrow_forward)),
 
-    return MaterialApp(
+
+
+
+
+      return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(
@@ -253,33 +264,33 @@ class MyApp extends StatelessWidget {
                         ),
                         //linha que será preenchida com o DB
                         //Row(children: [
-                          // Estrutura para receber a imagem do aluno
+                        // Estrutura para receber a imagem do aluno
 
-                          // Container(
-                          //   decoration: BoxDecoration(
-                          //     image: DecorationImage(
-                          //       image: AssetImage(''),
-                          //       fit: BoxFit.fill,
-                          //     ),
-                          //     shape: BoxShape.circle,
-                          //   ),
-                          // ),
+                        // Container(
+                        //   decoration: BoxDecoration(
+                        //     image: DecorationImage(
+                        //       image: AssetImage(''),
+                        //       fit: BoxFit.fill,
+                        //     ),
+                        //     shape: BoxShape.circle,
+                        //   ),
+                        // ),
 
-                          //Placeholder
-                          // Container(
-                          //   decoration: BoxDecoration(
-                          //     shape: BoxShape.circle,
-                          //     color: Colors.purple,
-                          //   ),
-                          //   child: SizedBox(
-                          //     height: 50,
-                          //     width: 50,
-                          //   ),
-                          // ),
-                          // Text(
-                          //   "Almoço Solidario",
-                          //   style: TextStyle(color: Colors.black, fontSize: 15),
-                          // )
+                        //Placeholder
+                        // Container(
+                        //   decoration: BoxDecoration(
+                        //     shape: BoxShape.circle,
+                        //     color: Colors.purple,
+                        //   ),
+                        //   child: SizedBox(
+                        //     height: 50,
+                        //     width: 50,
+                        //   ),
+                        // ),
+                        // Text(
+                        //   "Almoço Solidario",
+                        //   style: TextStyle(color: Colors.black, fontSize: 15),
+                        // )
                         //])
                       ],
                     ),
@@ -291,21 +302,6 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class NomeColuna extends StatelessWidget {
-  const NomeColuna({
-    Key? key,
-    required this.texto,
-  }) : super(key: key);
-  final String texto;
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      texto,
-      style: TextStyle(color: Colors.black, fontSize: 20),
     );
   }
 }
