@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class gerenciarEventos extends StatelessWidget {
+class Gerenciar_Eventos extends StatelessWidget {
   // get child => null;
 
   @override
@@ -10,7 +10,6 @@ class gerenciarEventos extends StatelessWidget {
 
     IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back));
     SizedBox(width: 50);
-    child:
     ElevatedButton(
       onPressed: () {
         showDialog(
@@ -23,6 +22,7 @@ class gerenciarEventos extends StatelessWidget {
               //backgroundColor: Colors.purple[900],
               title: Text("Adicionar novo evento"),
               actions: [
+                
                 TextField(
                   //controller: _nameInputController,
                   decoration: new InputDecoration(
@@ -74,10 +74,7 @@ class gerenciarEventos extends StatelessWidget {
                     hintText: 'Adicione uma Data',
                     //helperText: 'Keep it short, this is just a demo.',
                     labelText: 'Data',
-                    prefixIcon: const Icon(
-                      Icons.data_saver_on_rounded,
-                      color: Colors.purple,
-                    ),
+
                     prefixText: ' ',
                     //suffixText: 'USD',
                     //suffixStyle: const TextStyle(color: Colors.green),
@@ -166,6 +163,7 @@ class gerenciarEventos extends StatelessWidget {
                                   //backgroundColor: Colors.purple[900],
                                   title: Text("Adicionar novo evento"),
                                   actions: [
+                                    
                                     TextField(
                                       //controller: _nameInputController,
                                       decoration: new InputDecoration(
@@ -188,6 +186,7 @@ class gerenciarEventos extends StatelessWidget {
                                       height: 10,
                                       width: largura / 6,
                                     ),
+
                                     TextField(
                                       //controller: _descricaoInputController,
                                       decoration: new InputDecoration(
@@ -211,22 +210,170 @@ class gerenciarEventos extends StatelessWidget {
                                     ),
 
                                     TextField(
-                                      //controller: _dataInputController,
+                                      //controller: _nameInputController,
                                       decoration: new InputDecoration(
                                         border: new OutlineInputBorder(
                                             borderSide: new BorderSide(
-                                                color: Colors.purple.shade600)),
-                                        hintText: 'Adicione uma Data',
+                                                color: Colors.purple)),
+                                        hintText:
+                                            'Adicione um Endereço do evento',
                                         //helperText: 'Keep it short, this is just a demo.',
-                                        labelText: 'Data',
+                                        labelText: 'Endereço',
                                         prefixIcon: const Icon(
-                                          Icons.data_saver_on_rounded,
+                                          Icons.apartment_rounded,
                                           color: Colors.purple,
                                         ),
                                         prefixText: ' ',
                                         //suffixText: 'USD',
                                         //suffixStyle: const TextStyle(color: Colors.green),
                                       ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
+                                    ),
+
+                                    TextField(
+                                      //controller: _nameInputController,
+                                      decoration: new InputDecoration(
+                                        border: new OutlineInputBorder(
+                                            borderSide: new BorderSide(
+                                                color: Colors.purple)),
+                                        hintText: 'Adicione um tipo de evento',
+                                        //helperText: 'Keep it short, this is just a demo.',
+                                        labelText: 'Tipo',
+                                        prefixIcon: const Icon(
+                                          Icons.fact_check_rounded,
+                                          color: Colors.purple,
+                                        ),
+                                        prefixText: ' ',
+                                        //suffixText: 'USD',
+                                        //suffixStyle: const TextStyle(color: Colors.green),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
+                                    ),
+
+                                    TextField(
+                                      //controller: _nameInputController,
+                                      decoration: new InputDecoration(
+                                        border: new OutlineInputBorder(
+                                            borderSide: new BorderSide(
+                                                color: Colors.purple)),
+                                        hintText:
+                                            'Adicione um Categoria do evento',
+                                        //helperText: 'Keep it short, this is just a demo.',
+                                        labelText: 'Categoria',
+                                        prefixIcon: const Icon(
+                                          Icons.category_rounded,
+                                          color: Colors.purple,
+                                        ),
+                                        prefixText: ' ',
+                                        //suffixText: 'USD',
+                                        //suffixStyle: const TextStyle(color: Colors.green),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
+                                    ),
+
+                                    TextField(
+                                      //controller: _nameInputController,
+                                      decoration: new InputDecoration(
+                                        border: new OutlineInputBorder(
+                                            borderSide: new BorderSide(
+                                                color: Colors.purple)),
+                                        hintText: 'Adicione um Número de vagas',
+                                        //helperText: 'Keep it short, this is just a demo.',
+                                        labelText: 'Número de vagas',
+                                        prefixIcon: const Icon(
+                                          Icons.add_chart_outlined,
+                                          color: Colors.purple,
+                                        ),
+                                        prefixText: ' ',
+                                        //suffixText: 'USD',
+                                        //suffixStyle: const TextStyle(color: Colors.green),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
+                                    ),
+
+                                    TextField(
+                                      //controller: _nameInputController,
+                                      decoration: new InputDecoration(
+                                        border: new OutlineInputBorder(
+                                            borderSide: new BorderSide(
+                                                color: Colors.purple)),
+                                        hintText:
+                                            'Adicione um Data de início, término e inscrição',
+                                        //helperText: 'Keep it short, this is just a demo.',
+                                        labelText:
+                                            'Data de início, término e inscrição',
+                                        prefixIcon: const Icon(
+                                          Icons.date_range_outlined,
+                                          color: Colors.purple,
+                                        ),
+                                        prefixText: ' ',
+                                        //suffixText: 'USD',
+                                        //suffixStyle: const TextStyle(color: Colors.green),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
+                                    ),
+
+                                    TextField(
+                                      //controller: _nameInputController,
+                                      decoration: new InputDecoration(
+                                        border: new OutlineInputBorder(
+                                            borderSide: new BorderSide(
+                                                color: Colors.purple)),
+                                        hintText:
+                                            'Adicione um Horário do evento',
+                                        //helperText: 'Keep it short, this is just a demo.',
+                                        labelText: 'Horário do evento',
+                                        prefixIcon: const Icon(
+                                          Icons.access_time_rounded,
+                                          color: Colors.purple,
+                                        ),
+                                        prefixText: ' ',
+                                        //suffixText: 'USD',
+                                        //suffixStyle: const TextStyle(color: Colors.green),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
+                                    ),
+
+                                    TextField(
+                                      //controller: _nameInputController,
+                                      decoration: new InputDecoration(
+                                        border: new OutlineInputBorder(
+                                            borderSide: new BorderSide(
+                                                color: Colors.purple)),
+                                        hintText:
+                                            'Adicione um Imagem do evento',
+                                        //helperText: 'Keep it short, this is just a demo.',
+                                        labelText: 'Imagem do evento',
+                                        prefixIcon: const Icon(
+                                          Icons.image_rounded,
+                                          color: Colors.purple,
+                                        ),
+                                        prefixText: ' ',
+                                        //suffixText: 'USD',
+                                        //suffixStyle: const TextStyle(color: Colors.green),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                      width: largura / 6,
                                     ),
 
                                     SizedBox(
