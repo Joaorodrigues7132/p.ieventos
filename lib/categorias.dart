@@ -128,13 +128,15 @@ class _categoriadsState extends State<Categorias> {
                       Icons.search,
                       color: Colors.purple.shade900,
                     ),
-                    hintText: GoogleFonts.lato()
+                    hintText:
                        
                   "Pesquisar",
                   
             
                     
-                    hintStyle: TextStyle
+                    hintStyle:
+                    GoogleFonts. lato;
+                    TextStyle
                     (color: Colors.black),
                   
                     fillColor: Colors.white,
