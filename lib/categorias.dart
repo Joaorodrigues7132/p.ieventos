@@ -1,3 +1,4 @@
+import 'package:eventos_pi/tabela.dart';
 import 'package:flutter/material.dart';
 import 'gerenciar_Eventos.dart';
 
@@ -155,10 +156,7 @@ class _categoriadsState extends State<Categorias> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
-                            NomeColuna(texto: "Nome"),
-                            NomeColuna(texto: "Data"),
-                            NomeColuna(texto: "Editar"),
-                            NomeColuna(texto: "Excluir"),
+                            Tabela()
                           ],
                         ),
                         SizedBox(
