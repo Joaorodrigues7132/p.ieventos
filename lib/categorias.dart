@@ -128,7 +128,7 @@ class _categoriadsState extends State<Categorias> {
                       Icons.search,
                       color: Colors.purple.shade900,
                     ),
-                    hintText: 
+                    hintText: GoogleFonts.lato()
                        
                   "Pesquisar",
                   
@@ -314,4 +314,7 @@ class _categoriadsState extends State<Categorias> {
       ),
     );
   }
+}
+
+class GoogleFonts {
 }
