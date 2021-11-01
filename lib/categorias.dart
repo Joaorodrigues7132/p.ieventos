@@ -135,7 +135,7 @@ class _categoriadsState extends State<Categorias> {
             
                     
                     hintStyle:
-                    GoogleFonts. lato;
+                   
                     TextStyle
                     (color: Colors.black),
                   
