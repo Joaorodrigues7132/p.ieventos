@@ -100,7 +100,8 @@ class _categoriadsState extends State<Categorias> {
                 // define os botões na base do dialogo
                 ElevatedButton(
                   style: TextButton.styleFrom(backgroundColor: Colors.purple),
-                  child: Text(
+                  child: Text
+                  ( 
                     "Adicionar",
                   ),
                   onPressed: () {
@@ -121,6 +122,23 @@ class _categoriadsState extends State<Categorias> {
 
 
 
+      var style;
+      var inputDecoration = InputDecoration(
+                    prefixIcon: Icon(
+                      Icons.search,
+                      color: Colors.purple.shade900,
+                    ),
+                    hintText: 
+                       
+                  "Pesquisar",
+                  
+            
+                    
+                    hintStyle: TextStyle
+                    (color: Colors.black),
+                  
+                    fillColor: Colors.white,
+                    filled: true);
       return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -131,15 +149,7 @@ class _categoriadsState extends State<Categorias> {
               child: TextField(
                 maxLines: 1,
                 style: TextStyle(color: Colors.black),
-                decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.purple.shade900,
-                    ),
-                    hintText: "Pesquisar",
-                    hintStyle: TextStyle(color: Colors.black),
-                    fillColor: Colors.white,
-                    filled: true),
+                decoration: inputDecoration,
               ),
             ),
             Container(
