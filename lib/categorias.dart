@@ -115,7 +115,8 @@ class _categoriadsState extends State<Categorias> {
           },
         );
       },
-      child: const Text('Adicionar Eventos'),
+      child: const Text('Adicionar Eventos ',style: GoogleFonts,),
+
     );//MODAL
 
 
@@ -136,7 +137,7 @@ class _categoriadsState extends State<Categorias> {
             
                     
                     hintStyle:
-                   style:GoogleFonts.roboto()
+                   GoogleFonts.roboto()
     
                   
                     
