@@ -136,12 +136,8 @@ class _categoriadsState extends State<Categorias> {
             
                     
                     hintStyle:
-                   GoogleFonts.lato(
-    textStyle: Theme.of(context).textTheme.headline4,
-    fontSize: 48,
-    fontWeight: FontWeight.w700,
-    fontStyle: FontStyle.italic,
-  ),
+                   style:GoogleFonts.roboto()
+    
                   
                     
                   
