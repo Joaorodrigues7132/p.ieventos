@@ -1,7 +1,7 @@
 import 'package:eventos_pi/tabela.dart';
 import 'package:flutter/material.dart';
 import 'gerenciar_Eventos.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 class Categorias extends StatefulWidget {
   const Categorias({Key? key}) : super(key: key);
 
@@ -136,9 +136,14 @@ class _categoriadsState extends State<Categorias> {
             
                     
                     hintStyle:
-                   
-                    TextStyle
-                    (color: Colors.black),
+                   GoogleFonts.lato(
+    textStyle: Theme.of(context).textTheme.headline4,
+    fontSize: 48,
+    fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.italic,
+  ),
+                  
+                    
                   
                     fillColor: Colors.white,
                     filled: true);
