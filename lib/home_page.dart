@@ -2,7 +2,7 @@
 import 'package:eventos_pi/categorias.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_drawer.dart';
+import 'menulateral.dart';
 import 'gerenciar_Eventos.dart';
 
 class MyHomePage extends StatefulWidget {

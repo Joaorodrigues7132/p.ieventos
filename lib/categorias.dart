@@ -21,7 +21,6 @@ class _categoriadsState extends State<Categorias> {
 
         IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back));
     SizedBox(width: 50);
-    child:
     ElevatedButton(
       onPressed: () {
         showDialog(
