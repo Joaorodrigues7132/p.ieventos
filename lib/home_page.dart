@@ -40,7 +40,10 @@ class _MyHomePageState extends State<MyHomePage>
       ),
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        title: Text('Eventos'),
+        title: Text(
+          'Eventos',
+          style: TextStyle(fontFamily: 'top2'),
+        ),
       ),
       body: TabBarView(
         controller: _controller,

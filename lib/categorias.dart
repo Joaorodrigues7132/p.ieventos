@@ -10,16 +10,12 @@ class Categorias extends StatefulWidget {
 }
 
 class _categoriadsState extends State<Categorias> {
-
   @override
   Widget build(BuildContext context) {
     var largura = MediaQuery.of(context).size.width;
     var altura = MediaQuery.of(context).size.height;
 
-
-
-
-        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back));
+    IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back));
     SizedBox(width: 50);
     ElevatedButton(
       onPressed: () {
@@ -100,8 +96,7 @@ class _categoriadsState extends State<Categorias> {
                 // define os botões na base do dialogo
                 ElevatedButton(
                   style: TextButton.styleFrom(backgroundColor: Colors.purple),
-                  child: Text
-                  ( 
+                  child: Text(
                     "Adicionar",
                   ),
                   onPressed: () {
@@ -115,33 +110,19 @@ class _categoriadsState extends State<Categorias> {
         );
       },
       child: const Text('Adicionar Eventos'),
-    );//MODAL
+    ); //MODAL
 
-
-
-
-
-
-      var style;
-      var inputDecoration = InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.purple.shade900,
-                    ),
-                    hintText:
-                       
-                  "Pesquisar",
-                  
-            
-                    
-                    hintStyle:
-                   
-                    TextStyle
-                    (color: Colors.black),
-                  
-                    fillColor: Colors.white,
-                    filled: true);
-      return MaterialApp(
+    var style;
+    var inputDecoration = InputDecoration(
+        prefixIcon: Icon(
+          Icons.search,
+          color: Colors.purple.shade900,
+        ),
+        hintText: "Pesquisar",
+        hintStyle: TextStyle(color: Colors.black, fontFamily: 'top2'),
+        fillColor: Colors.white,
+        filled: true);
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(
@@ -166,9 +147,7 @@ class _categoriadsState extends State<Categorias> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
-                            Tabela()
-                          ],
+                          children: const [Tabela()],
                         ),
                         SizedBox(
                           height: 20,
@@ -315,5 +294,4 @@ class _categoriadsState extends State<Categorias> {
   }
 }
 
-class GoogleFonts {
-}
+
