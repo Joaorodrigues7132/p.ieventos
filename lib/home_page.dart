@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage>
         backgroundColor: Colors.deepPurple,
         title: Text(
           'Eventos',
-          style: TextStyle(fontFamily: 'top2'),
+          style: TextStyle(fontFamily: 'top'),
         ),
       ),
       body: TabBarView(

@@ -119,7 +119,7 @@ class _categoriadsState extends State<Categorias> {
           color: Colors.purple.shade900,
         ),
         hintText: "Pesquisar",
-        hintStyle: TextStyle(color: Colors.black, fontFamily: 'top2'),
+        hintStyle: TextStyle(color: Colors.black, fontFamily: 'top'),
         fillColor: Colors.white,
         filled: true);
     return MaterialApp(
@@ -293,5 +293,3 @@ class _categoriadsState extends State<Categorias> {
     );
   }
 }
-
-
