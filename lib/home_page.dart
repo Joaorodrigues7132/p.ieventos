@@ -17,6 +17,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   late TabController _controller;
+  String title = '';
+
   int _currentIndex = 0;
 
   @override
@@ -41,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage>
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         title: Text(
-          'Eventos',
+          title,
           style: TextStyle(fontFamily: 'top'),
         ),
       ),
@@ -58,6 +60,11 @@ class _MyHomePageState extends State<MyHomePage>
   _handleTabSelection() {
     if (_controller.indexIsChanging) {
       setState(() {
+        if (_currentIndex == 0) {
+          title = 'Categorias';
+        } else if (_currentIndex == 1) {
+          title = 'Gerenciar Eventos';
+        }
         _currentIndex = _controller.index;
       });
     }

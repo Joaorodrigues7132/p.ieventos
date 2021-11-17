@@ -125,6 +125,7 @@ class _categoriadsState extends State<Categorias> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        
         body: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
