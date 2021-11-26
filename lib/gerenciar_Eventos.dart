@@ -22,7 +22,6 @@ class Gerenciar_Eventos extends StatelessWidget {
               //backgroundColor: Colors.purple[900],
               title: Text("Adicionar novo evento"),
               actions: [
-                
                 TextField(
                   //controller: _nameInputController,
                   decoration: new InputDecoration(
@@ -123,7 +122,8 @@ class Gerenciar_Eventos extends StatelessWidget {
                       color: Colors.purple.shade900,
                     ),
                     hintText: "Pesquisar",
-                    hintStyle: TextStyle(color: Colors.black),
+                    hintStyle:
+                        TextStyle(color: Colors.black, fontFamily: 'top'),
                     fillColor: Colors.white,
                     filled: true),
               ),
@@ -163,7 +163,6 @@ class Gerenciar_Eventos extends StatelessWidget {
                                   //backgroundColor: Colors.purple[900],
                                   title: Text("Adicionar novo evento"),
                                   actions: [
-                                    
                                     TextField(
                                       //controller: _nameInputController,
                                       decoration: new InputDecoration(
