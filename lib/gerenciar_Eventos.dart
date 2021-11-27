@@ -161,7 +161,7 @@ class Gerenciar_Eventos extends StatelessWidget {
                                   shape:
                                       Border.all(color: Colors.purple.shade400),
                                   //backgroundColor: Colors.purple[900],
-                                  title: Text("Adicionar novo evento"),
+                                  title: Text("Adicionar Novo Evento"),
                                   actions: [
                                     TextField(
                                       //controller: _nameInputController,
